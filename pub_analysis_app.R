@@ -6,7 +6,6 @@ library(shinycssloaders)
 library(ggalluvial)
 library(RISmed)
 library(tidyverse)
-library(periscope)
 
 
 

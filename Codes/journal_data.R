@@ -24,7 +24,7 @@ journal_data<-function(ris.res, starty, endy) {
     q.pimd<-q.pmid[which(q.pubyear>=starty & q.pubyear<=endy)]
     q.journal<-q.journal[which(q.pubyear>=starty & q.pubyear<=endy)]
     q.mesh<-q.mesh[which(q.pubyear>=starty & q.pubyear<=endy)]
-    q.pubyear.f<-q.pubyear[which(q.pubyear>=starty & q.pubyear<=endy)]
+    q.pubyear<-q.pubyear[which(q.pubyear>=starty & q.pubyear<=endy)]
     
     if (sum(!is.na(q.mesh))>0) {
       
@@ -38,7 +38,7 @@ journal_data<-function(ris.res, starty, endy) {
           colnames(temp.mesh)<-c('MeSH','MeSHType')
           
           temp.mesh$PMID<-q.pmid[m]
-          temp.mesh$PubYear<-q.pubyear.f[m]
+          temp.mesh$PubYear<-q.pubyear[m]
           temp.mesh$Journal<-q.journal[m]
           
           dat.df<-rbind(dat.df,temp.mesh)

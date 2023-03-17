@@ -5,7 +5,7 @@ keyword_search<-function(keywords, starty, endy) {
   ydat<-paste0('(',starty,':',endy,' [dp])')
   myquery<-paste0('(',keywords,') AND ',ydat)
   
-  ris.res <- EUtilsSummary(myquery,type="esearch", db="pubmed", retmax=10000)
+  ris.res <- EUtilsSummary(myquery,type="esearch", db="pubmed", retmax=5000)
   
   # # save query summary to a txt file for reference
   # sink('Data/keywords_query_summary.txt')

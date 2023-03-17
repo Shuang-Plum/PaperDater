@@ -6,9 +6,9 @@ journal_data<-function(ris.res, starty, endy) {
   res.len<-length(summary(ris.res))
   if (res.len>0) {
     
-    load('Data/jtiral.RData')
+    #load('Data/jtiral.RData')
     
-    #q.res <- EUtilsGet(ris.res,type="efetch", db="pubmed")
+    q.res <- EUtilsGet(ris.res,type="efetch", db="pubmed")
     
     q.pmid<-PMID(q.res)
     q.pubyear<-YearPubDate(q.res)

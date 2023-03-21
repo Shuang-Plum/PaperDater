@@ -391,7 +391,7 @@ server <- function(input, output, session) {
   )
   
   output$kdownload_supp <- downloadHandler(
-    filename = 'PubAnalysis_SupportingInfo.pptx',
+    filename = 'PaperDater_SupportingInfo.pptx',
     content = function(file) { 
       file.copy("www/methods.pptx", file) 
     }
@@ -480,7 +480,7 @@ server <- function(input, output, session) {
   )
   
   output$jdownload_supp <- downloadHandler(
-    filename = 'PubAnalysis_SupportingInfo.pptx',
+    filename = 'PaperDater_SupportingInfo.pptx',
     content = function(file) { 
       file.copy("www/methods.pptx", file) 
     }
@@ -536,7 +536,7 @@ server <- function(input, output, session) {
   )
   
   output$mdownload_supp <- downloadHandler(
-    filename = 'PubAnalysis_SupportingInfo.pptx',
+    filename = 'PaperDater_SupportingInfo.pptx',
     content = function(file) { 
       file.copy("www/methods.pptx", file) 
     }

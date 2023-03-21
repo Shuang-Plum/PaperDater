@@ -289,7 +289,9 @@ ui <- fluidPage(
 
 
 # Define server ----------------------------------------------------------------
-
+`%then%` <- function(a, b) {
+  if (is.null(a)) b else a
+}
 server <- function(input, output, session) {
   
   

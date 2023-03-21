@@ -112,7 +112,7 @@ keyword_filter_plot<-function(dat.df,min.count,min.count.forlabel,keywords){
               axis.title.y=element_text(size=20,face='bold',angle=90)) +
         geom_blank()+
         #facet_wrap(~ region, scales = "fixed") +
-        ggtitle("No Journal after filtering with minimal count")
+        ggtitle("No journal after filtering with Min total count \n Please enter a smaller number")
       
     }
     
@@ -144,7 +144,7 @@ keyword_filter_plot<-function(dat.df,min.count,min.count.forlabel,keywords){
             axis.title.y=element_text(size=20,face='bold',angle=90)) +
       geom_blank()+
       #facet_wrap(~ region, scales = "fixed") +
-      ggtitle("No publication returned \n Consider change keywords")
+      ggtitle("No publication returned \n Please change keywords")
   }
   
 }

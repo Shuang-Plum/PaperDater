@@ -359,7 +359,8 @@ server <- function(input, output, session) {
         need(input$keyword, 'Please enter at least one Keyword') %then%
         need(input$k.starty, 'Please enter Year Start') %then%
         need(input$k.endy, 'Please enter Year End') %then%
-        need(try(keyword.data()), 'Too Many Requests. HTTP Error 429. Please wait 20s and then click Plot again.')
+        need(try(keyword.data()), 'Too Many Requests. HTTP Error 429. Please wait 20s and then click Plot again.') %then%
+        need(input$k.min.count, 'Please enter a valid number for Min total count')
       )
 
       

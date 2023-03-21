@@ -53,14 +53,14 @@ journal_data<-function(ris.res, starty, endy) {
     } else {
       # no MeSH term returned for the journal
       
-      dat.df<-'Found publicaitons but no associated MeSH terms. \n Consider change journal or year range.'
+      dat.df<-'Found publicaitons but no associated MeSH terms \n Please change journal or year range'
       
     }
     
     
   } else {
     # no publications returned
-    dat.df<-'No publication returned. \n Check journal name.'
+    dat.df<-'No publication returned \n Check journal name'
     
     
   }

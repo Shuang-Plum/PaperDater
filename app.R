@@ -254,10 +254,10 @@ ui <- fluidPage(
                          wellPanel(id="j.notification",style = "height:45px; font-size: 18px; padding: 8px 8px",
                                    tags$p(strong('Wait time is long for Journal Profiler, approx 5-15 min.'))),
                          hr(),
-                         wellPanel(id="j.query",style = "overflow-y:scroll; height:200px; font-size: 20px; padding: 8px 8px",
+                         wellPanel(id="j.query",style = "overflow-y:scroll; height:155px; font-size: 20px; padding: 8px 8px",
                                    shinycssloaders::withSpinner(
                                      htmlOutput(outputId = 'journal.query'),
-                                     type = 1, color = "#408000", size = 0.7,proxy.height=150)
+                                     type = 1, color = "#408000", size = 0.7,proxy.height=115)
                                    ),
                          
                          hr(),

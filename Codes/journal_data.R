@@ -48,7 +48,7 @@ journal_data<-function(ris.res, starty, endy) {
       }
       
       row.names(dat.df)<-c(1:nrow(dat.df))
-      
+      dat.df<-dat.df[order(dat.df$PubYear, dat.df$PMID, dat.df$MeSH),]
       
     } else {
       # no MeSH term returned for the journal
